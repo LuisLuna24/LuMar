@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.heder {
+    width: 100%;
+    height: 50px;
+    background: #181824;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.heder_contenedor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+.heder_logo a{
+    color: #f6f6f6;
+    text-decoration: none;
+    font-family: 5rem;
+}
+
+.heder_navbar ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.heder_navbar li{
+    list-style: none;
+}
+
+.heder_navbar .Active{
+    color: #A32FE0;
+    transform: translateY(-5px);
+    transition: 0.5s ease-out;
+}
+
+ input[type="button"]{
+    color: #f6f6f6;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="button"]:hover{
+    transform: translateY(-5);
+}
+
+
+@media(max-width:768px){
+    .heder{
+        height: auto;
+        padding: 10px;
+    }
+    .heder_contenedor{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
