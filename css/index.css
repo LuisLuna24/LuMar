@@ -32,6 +32,7 @@ body{
 
 .cabesera_titulo h1 {
     font-size: 2.5rem;
+    animation: moverh1 2s ease-in-out;
 }
 .cabesera_titulo h1 span{
     color: #DD2FE0;
@@ -39,6 +40,7 @@ body{
 
 .cabesera_titulo img{
     width: 300px;
+    animation: moverimg 1.5s ease-in-out;
 }
 
 .cabesera_Logo {
@@ -46,8 +48,30 @@ body{
     display: grid;
     place-items: center;
     gap: 20px;
+    animation: moverimg 1.5s ease-in-out;
 }
 
+@keyframes moverimg{
+    0%{
+        transform:translateY(-30%);
+        opacity: 0%;
+    }
+    100%{
+        
+        opacity: 100%;
+    }
+}
+
+@keyframes moverh1{
+    0%{
+        transform:translateY(30%);
+        opacity: 0%;
+    }
+    100%{
+        
+        opacity: 100%;
+    }
+}
 .card{
     width: 80%;
     height: 150px;

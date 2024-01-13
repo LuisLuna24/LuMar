@@ -1,0 +1,40 @@
+@keyframes mover{
+    0%{
+        transform:translateY(100%);
+        opacity: 0%;
+    }
+    100%{
+        
+        opacity: 100%;
+    }
+}
+
+@keyframes mover2{
+    0%{
+        transform:translateY(100%);
+        opacity: 0%;
+    }
+    50%{
+        
+        opacity: 0%;
+    }
+    100%{
+        
+        opacity: 100%;
+    }
+}
+
+
+@keyframes aparecer{
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        transform:translatex(-10%);
+        opacity: 0%;
+    }
+    100%{
+        
+        opacity: 100%;
+    }
+}
