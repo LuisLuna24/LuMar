@@ -96,10 +96,116 @@ body{
     background-position: center;
 }
 
+.Presentacion {
+    width: 100%;
+    height: 50vh;
+    padding: 50px;
+}
+.Precentacion_Contenedor {
+    background: linear-gradient(90deg,#202020d6,#1c3d85a2),url("../img/Paginas.webp")no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 25px;
+    display: grid;
+    place-items: center;
+    padding: 50px;
+
+}
+.Precentacion_Texto {
+    color: #f6f6f6;
+    text-align: center;
+}
+.Precentacion_Texto h2{
+    font-size: 2.5rem;
+    color: #DD2FE0;
+}.Precentacion_Texto p{
+    font-size: 1.5rem;
+}
+
+
+.Precentacion_Contacto button{
+    background: transparent;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #f6f6f6;
+    border-radius: 25px;
+    border: solid 3px #DD2FE0;
+    transition: 0.5s ease-in-out;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.Precentacion_Contacto button:hover{
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 8px #181824;
+    background-color: #692FE0;
+}
+
+
+.Nosotros {
+    width: 100%;
+    height: 50vh;
+    padding: 50px;
+}
+.Nosotros_Contenedor {
+    width: 100%;
+    text-align: center;
+    border-radius: 25px;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    color: #f6f6f6;
+    border: solid 3px #DD2FE0;
+    padding: 20px;
+    box-shadow: 0px 0pc 15px #f165f4;
+}
+.Nosotros_Titulo {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #692FE0;
+}
+.Nosotros_Texto {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+}
+.Nosotros_Descripcion {
+    font-size: 1.2rem;
+}
+.Nosotros_Fuertes {
+    text-align: start;
+    list-style: none;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+ul{
+    display: grid;
+    gap: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+li span{
+    color: #DD2FE0;
+    font-weight: bolder;
+}
+
+
+
 @media(max-width:768px){
     .cabesera{
         height: 100vh;
-        margin-top: 80px;
+        margin-top: 0px;
         height: auto;
     }
     .cabesera_contenedor{
@@ -110,6 +216,13 @@ body{
     }
     .cabesera_titulo{
         text-align: center;
+    }
+    .Presentacion {
+        padding: 10px;
+        height: auto;
+    }
+    .Nosotros{
+        padding: 20px;
     }
 }
 

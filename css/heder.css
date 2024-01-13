@@ -1,68 +1,131 @@
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.heder {
-    width: 100%;
-    height: 50px;
-    background: #181824;
-    position: fixed;
+
+.header{
+    position: sticky;
     top: 0;
     left: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.heder_contenedor {
     width: 100%;
-    height: 100%;
+    padding: 0.3rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
-}
-.heder_logo a{
-    color: #f6f6f6;
-    text-decoration: none;
-    font-family: 5rem;
+    z-index: 100;
+    font-family: "Montserrat",sans-serif;
+    
 }
 
-.heder_navbar ul{
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.548);
+    background-color: #181824;
+    
+}
+
+.name{
+    height: 100%;
     display: flex;
-    flex-direction: row;
-    gap: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
-.heder_navbar li{
-    list-style: none;
-}
-
-.heder_navbar .Active{
+.navbar a{
+    font-size: 1.15rem;
     color: #A32FE0;
-    transform: translateY(-5px);
-    transition: 0.5s ease-out;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+    transition: 0.5s ease;
 }
 
- input[type="button"]{
-    color: #f6f6f6;
-    font-size: 1.1rem;
-    font-weight: bolder;
-    background-color: transparent;
-    border: none;
+.navbar a:hover{
+    color: #f7efe1;
+    padding-right: 10px;
+}
+
+#check{
+    display: none;
+}
+
+.menu{
+    position: absolute;
+    right: 5%;
+    font-size: 2rem;
     cursor: pointer;
+    display: none;
 }
 
-input[type="button"]:hover{
-    transform: translateY(-5);
+.img_menu{
+    width: 40px;
 }
-
 
 @media(max-width:768px){
-    .heder{
-        height: auto;
-        padding: 10px;
+    .header{
+        padding: 0.5rem 1%;
     }
-    .heder_contenedor{
-        flex-direction: column;
-        gap: 10px;
+}
+
+@media(max-width:767px){
+    .header{
+        padding: 0.5rem 10%;
     }
+    .menu{
+        display: inline-flex;
+    }
+    #check:checked~.menu #icon-menu{
+        display: none;
+    }
+    .menu #close-menu{
+        display: none;
+    }
+    #check:checked~.menu #close-menu{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: #16161691;
+        backdrop-filter: blur(50px);
+        overflow: hidden;
+        transition: 0.3s ease;
+    }
+    #check:checked~.navbar{
+        height: 17.7rem;
+    }
+    .navbar a {
+        display: block;
+        font-size: 1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transition: 0.3s ease;
+        color: #f7efe1;
+    }
+    .bx{
+        width: 40px;
+    }
+    
+    .logo_gis{
+        width: 25px;
+    }
+    
+}
+
+.bx{
+    width: 40px;
+}
+
+.logo_gis{
+    width: 40px;
 }
