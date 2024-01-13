@@ -129,3 +129,29 @@
 .logo_gis{
     width: 40px;
 }
+
+
+/* ================================================================= footer =================================================================*/
+
+
+footer{
+    width: 100%;
+    box-shadow: 0px 0px 10px #A32FE0;
+    border-radius: 25px 25px 0px  0px;
+    border: solid 3px #A32FE0;
+    color: #f7efe1;
+    
+}
+
+.footer_Derechos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+
+}
+footer img {
+    width: 30px;
+}

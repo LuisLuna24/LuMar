@@ -142,12 +142,14 @@ body{
 .Precentacion_Texto {
     color: #f6f6f6;
     text-align: center;
+    
 }
 .Precentacion_Texto h2{
     font-size: 2.5rem;
     color: #DD2FE0;
 }.Precentacion_Texto p{
     font-size: 1.5rem;
+    padding: 20px;
 }
 
 
