@@ -153,7 +153,7 @@ body{
 }
 
 
-.Precentacion_Contacto button{
+ button{
     background: transparent;
     padding: 10px 30px;
     text-decoration: none;
@@ -165,7 +165,7 @@ body{
     cursor: pointer;
 }
 
-.Precentacion_Contacto button:hover{
+button:hover{
     transform: translateY(-5px);
     box-shadow: 5px 5px 8px #181824;
     background-color: #692FE0;
@@ -226,6 +226,83 @@ li span{
     font-weight: bolder;
 }
 
+.Proyectos_Titulo{
+    width: 100%;
+    text-align: center;
+    padding: 0px 50px;
+}
+
+.Proyectos_Titulo h2{
+    font-size:3rem;
+    color: #DD2FE0;
+}
+
+.Proyectos_Titulo p{
+    font-size:1.5rem;
+    color: #f6f6f6;
+}
+
+.linea{
+    width: 100%;
+    height: 5px;
+    background: #692FE0;
+    border-radius: 25px;
+    margin: 10px 0px 10px 0px;
+}
+
+.Proyectos_cards {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Proyecto_card {
+    width: 100%;
+    height: 50vh;
+    padding: 20px;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    color: #692FE0;
+    border: solid 4px #DD2FE0;
+}
+.card_texto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card_texto h2{
+    font-size: 2.3rem;
+}
+
+.card_texto p{
+    font-size: 1.5rem;
+    color: #f6f6f6;
+}
+
+.card_img {
+    border-radius: 20px;
+    overflow: hidden;
+    border: solid 4px #692FE0;
+}
+
+.card_img img{
+    height: 250px;
+}
+
+.card_Botones{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    margin-top: 20px;
+    gap: 20px;
+}
 
 
 @media(max-width:768px){
@@ -249,6 +326,21 @@ li span{
     }
     .Nosotros{
         padding: 20px;
+        height: auto;
+    }
+
+    .Proyectos_cards{
+        padding: 20px;
+    }
+
+    .card_img{
+        margin-top: 20px;
+    }
+    .card_img img{
+        width: 100%;
+        height: auto;
+    }
+    .Proyecto_card{
+        height: auto;
     }
 }
-
